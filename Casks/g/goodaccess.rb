@@ -17,10 +17,12 @@ cask "goodaccess" do
   depends_on macos: ">= :tahoe"
 
   app "GoodAccess.app"
+  uninstall quit: "com.samohyb.GoodAccessMac"
 
   zap trash: [
     "~/Library/Application Support/GoodAccess",
     "~/Library/Caches/com.samohyb.GoodAccessMac",
-    "~/Library/Caches/SentryCrash/GoodAccess"
+    "~/Library/Caches/SentryCrash/GoodAccess",
+    "~/Library/Preferences/com.samohyb.GoodAccessMac.plist",
   ]
 end
