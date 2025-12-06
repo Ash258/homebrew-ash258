@@ -1,0 +1,11 @@
+version: "3.0"
+
+tasks:
+  livecheck:
+    cmd: brew livecheck --cask {{.CLI_ARGS}}
+    aliases:
+      - l
+  bump:
+    cmd: brew bump-cask-pr --write-only --version {{.CLI_ARGS}}
+    aliases:
+      - b
