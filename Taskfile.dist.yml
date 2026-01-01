@@ -2,10 +2,20 @@ version: "3.0"
 
 tasks:
   livecheck:
-    cmd: brew livecheck --cask {{.CLI_ARGS}}
+    cmd: brew livecheck --cask {{.CLI_ARGS}} --newer-only --quiet
     aliases:
       - l
   bump:
     cmd: brew bump-cask-pr --write-only --version {{.CLI_ARGS}}
     aliases:
       - b
+  livecheck-all:
+    # TODO: Switch to array
+    sources:
+      - Casks/**/*.rb
+    # cmd: brew livecheck wavebox@beta --quiet --newer-only | awk '{print $2, $1}' | sed 's/://g'
+    cmds:
+      - for: sources
+        cmd: brew livecheck {{regexReplaceAll ".*?/" .ITEM "" | replace ".rb" ""}} --quiet --newer-only | sed -E 's/:.*==>//g' | awk '{print $2, $1}'
+        # vars:
+        #   CLI_ARGS: '{{regexReplaceAll ".*?/" .ITEM "" | replace ".rb" ""}}'
