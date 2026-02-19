@@ -1,9 +1,9 @@
 cask "wavebox@canary" do
   arch arm: "arm64"
 
-  version "10.145.16.4"
-  sha256 arm:   "b036660b599cf7671cbe8566f5f4cad2f0400915cac9281be7efe3efe641cdb1",
-         intel: "dc8a49c137120282a4117229cfb286f7ffa9df6b3a3f16ca696b641190eea630"
+  version "10.145.29.4"
+  sha256 arm:   "646094d982b2bde04e6c13fcee5b9f6ba2fc8fb52423bcd5b7c83b8b3aa0482b",
+         intel: "956562912e75866f23d5b3973ef3c48969c91d577b8845abad544b9b76ff29c6"
 
   url "https://download.wavebox.app/canary/mac#{arch}/Install%20Wavebox%20#{version}.dmg",
       verified: "download.wavebox.app/"
