@@ -15,6 +15,7 @@ cask "atoll" do
   depends_on macos: ">= :sonoma"
 
   app "Atoll.app"
+
   uninstall quit: "com.Ebullioscopic.Atoll"
 
   zap trash: [
