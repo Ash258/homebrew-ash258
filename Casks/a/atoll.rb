@@ -12,7 +12,7 @@ cask "atoll" do
     strategy :git
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Atoll.app"
 

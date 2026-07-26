@@ -1,6 +1,6 @@
 cask "nayaflow" do
-  version "1.17.3"
-  sha256 "be1e8cf23389c2e9b49144bb9d8bd114eb12db1388c38d86a945651e83fa40e3"
+  version "1.25.1"
+  sha256 "6daad9228e601ab1bde0313be87abb69bb8f63a2585f3f54850f4303c6cb69c9"
 
   url "https://github.com/NayaTech/NayaFlow-releases/releases/download/v#{version}/NayaFlow-arm64.dmg",
       verified: "github.com/"
@@ -8,7 +8,7 @@ cask "nayaflow" do
   desc "Dedicated software used to program and customize your Naya keyboard and modules"
   homepage "https://naya.tech/pages/naya-flow"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "NayaFlow.app"
 

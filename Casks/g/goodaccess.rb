@@ -1,6 +1,6 @@
 cask "goodaccess" do
-  version "4.7.0"
-  sha256 "fa74bf46c05b40f2ff6715844331de05f93b0253dd07b9852cae7b4762d6beb2"
+  version "4.7.14"
+  sha256 "2905a1d9fce5e70db92c31640393dbe738ff16747eb01afc48f2f3c2d0df1057"
 
   url "https://goodaccess-storage.b-cdn.net/applications/prod/macOS/GoodAccess_#{version}.dmg",
       verified: "goodaccess-storage.b-cdn.net/"
@@ -14,9 +14,10 @@ cask "goodaccess" do
     regex(%r{/GoodAccess[._-]v?([\d.]+)\.dmg}i)
   end
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :sonoma
 
   app "GoodAccess.app"
+
   uninstall quit: "com.samohyb.GoodAccessMac"
 
   zap trash: [

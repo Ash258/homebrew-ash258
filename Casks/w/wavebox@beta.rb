@@ -1,9 +1,9 @@
 cask "wavebox@beta" do
   arch arm: "arm64"
 
-  version "10.145.60.3"
-  sha256 arm:   "de5204a5d960517120f4c69b75264a543eff3bbebd2ed93958655ac18de91cd2",
-         intel: "9d2cbd6d12f844be2f9722c5a7b9644f3761a85569fc64665e17e8f2e86537ec"
+  version "151.2.135.3"
+  sha256 arm:   "41a0d68f78bb99419a116d630a4febf333353d8228cfd6fb31f1bed01d9248db",
+         intel: "ab6062d60854f37b765f1e97540e1abed2941653da2f761ad4b9aa0e40d87ffa"
 
   url "https://download.wavebox.app/beta/mac#{arch}/Install%20Wavebox%20#{version}.dmg",
       verified: "download.wavebox.app/"
@@ -18,7 +18,7 @@ cask "wavebox@beta" do
 
   auto_updates true
   conflicts_with cask: "wavebox"
-  depends_on macos: ">= :monterey"
+  depends_on macos: :ventura
 
   app "Wavebox.app"
 
