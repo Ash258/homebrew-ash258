@@ -2,8 +2,7 @@ cask "goodaccess" do
   version "4.7.14"
   sha256 "2905a1d9fce5e70db92c31640393dbe738ff16747eb01afc48f2f3c2d0df1057"
 
-  url "https://goodaccess-storage.b-cdn.net/applications/prod/macOS/GoodAccess_#{version}.dmg",
-      verified: "goodaccess-storage.b-cdn.net/"
+  url "https://goodaccess-storage.b-cdn.net/applications/prod/macOS/GoodAccess_#{version}.dmg"
   name "GoodAccess"
   desc "Secure Remote Access VPN"
   homepage "https://www.goodaccess.com/"

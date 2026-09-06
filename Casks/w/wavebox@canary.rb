@@ -1,12 +1,11 @@
 cask "wavebox@canary" do
   arch arm: "arm64"
 
-  version "151.2.135.4"
-  sha256 arm:   "14983373dda78fd8bdf9e0e995c35eaaa6c5564f2ce6d5be52954ca77d14f294",
-         intel: "e1c7d04431a8ed5a4a8bf6554da68d43a5c8bd0503c2d8a4a8f340fab79dc548"
+  version "153.2.193.4"
+  sha256 arm:   "f72a6c4c761f4ae4bce26e05e9afe6040fb0f1379349eb8990de6f46a6cfffbe",
+         intel: "705a56633649b04070136e37a4338ce4bf3150663a01e4960fdca9791c940f63"
 
-  url "https://download.wavebox.app/canary/mac#{arch}/Install%20Wavebox%20#{version}.dmg",
-      verified: "download.wavebox.app/"
+  url "https://download.wavebox.app/canary/mac#{arch}/Install%20Wavebox%20#{version}.dmg"
   name "Wavebox (Canary)"
   desc "Web browser"
   homepage "https://wavebox.io/"
